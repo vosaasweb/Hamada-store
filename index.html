@@ -65,7 +65,7 @@
           <p data-i18n="hero.subtitle">اكتشف تشكيلتنا المختارة من الملابس والأحذية بجودة فاخرة وتصاميم عالمية.</p>
           <div class="hero-ctas">
             <a href="#featured" class="btn btn-primary" data-i18n="hero.shop">تسوق الآن</a>
-            <a href="#categories" class="btn btn-ghost" data-i18n="hero.explore">اكتشف ��لمنتجات</a>
+            <a href="#categories" class="btn btn-ghost" data-i18n="hero.explore">اكتشف المنتجات</a>
           </div>
         </div>
         <div class="hero-image">
@@ -309,5 +309,22 @@
   </footer>
 
   <script src="script.js" defer></script>
+
+  <!-- Fallback: hide loader if main script fails -> will run after 2s or on load -->
+  <script>
+    (function(){
+      function hide(){
+        const loader = document.getElementById('loader');
+        if(loader){ loader.style.opacity = '0'; setTimeout(()=> loader.style.display = 'none', 400); }
+        const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+        window._mainScriptLoaded = true;
+      }
+      // If script.js didn't run, hide after 2s
+      setTimeout(()=> { if(!window._mainScriptLoaded) hide(); }, 2000);
+      // Also hide on load (if load fires, page is ready)
+      window.addEventListener('load', hide);
+    })();
+  </script>
+
 </body>
 </html>
