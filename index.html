@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="حمادة ستورز — متجر الملابس والأحذية الفاخرة. أناقتك تبدأ من هنا. تسوق الآن أحدث الموديلات والأسعار التنافسية." />
+  <title>حمادة ستورز — أناقتك تبدأ من هنا</title>
+
+  <!-- Google Fonts: Cairo (Arabic) + Poppins (English) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- SEO / Open Graph -->
+  <meta property="og:title" content="حمادة ستورز" />
+  <meta property="og:description" content="متجر الملابس والأحذية — أحدث الموديلات والخامات الفاخرة." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520975924715-8b8f7f6a2ed9?q=80&w=1200&auto=format&fit=crop&crop=entropy" />
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="logo-pulse">ح</div>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar transparent" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#" data-i18n="brand">حمادة ستورز</a>
+
+      <nav class="nav-links">
+        <a href="#hero" data-i18n="nav.home">الرئيسية</a>
+        <a href="#categories" data-i18n="nav.categories">الأقسام</a>
+        <a href="#featured" data-i18n="nav.products">المنتجات</a>
+        <a href="#why" data-i18n="nav.why">لماذا نحن</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-btn" aria-label="toggle language">AR | EN</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="menu">☰</button>
+      </div>
+    </div>
+
+    <!-- mobile dropdown -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#hero" data-i18n="nav.home">الرئيسية</a>
+      <a href="#categories" data-i18n="nav.categories">الأقسام</a>
+      <a href="#featured" data-i18n="nav.products">المنتجات</a>
+      <a href="#why" data-i18n="nav.why">لماذا نحن</a>
+      <a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a>
+      <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg parallax" style="background-image:url('https://images.unsplash.com/photo-1520975924715-8b8f7f6a2ed9?q=80&w=1600&auto=format&fit=crop&crop=entropy');"></div>
+    <div class="container hero-content reveal">
+      <div class="glass card-hero">
+        <div class="hero-text">
+          <h1 data-i18n="hero.title">أناقتك تبدأ من هنا</h1>
+          <p data-i18n="hero.subtitle">اكتشف تشكيلتنا المختارة من الملابس والأحذية بجودة فاخرة وتصاميم عالمية.</p>
+          <div class="hero-ctas">
+            <a href="#featured" class="btn btn-primary" data-i18n="hero.shop">تسوق الآن</a>
+            <a href="#categories" class="btn btn-ghost" data-i18n="hero.explore">اكتشف ��لمنتجات</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=900&auto=format&fit=crop&crop=entropy" alt="ملابس وأحذية" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="categories.title">الأقسام</h2>
+      <p class="section-sub reveal" data-i18n="categories.subtitle">تسوق من مجموعاتنا المميزة</p>
+
+      <div class="grid cols-2 cols-sm-4 gap-lg">
+        <article class="card glass reveal hover-zoom">
+          <img src="https://images.unsplash.com/photo-1520975924715-8b8f7f6a2ed9?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="ملابس رجالي" />
+          <h3 data-i18n="cat.men">ملابس رجالي</h3>
+        </article>
+
+        <article class="card glass reveal hover-zoom">
+          <img src="https://images.unsplash.com/photo-1520975924036-1a2f7b1c3b9b?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="ملابس حريمي" />
+          <h3 data-i18n="cat.women">ملابس حريمي</h3>
+        </article>
+
+        <article class="card glass reveal hover-zoom">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="أحذية" />
+          <h3 data-i18n="cat.shoes">أحذية</h3>
+        </article>
+
+        <article class="card glass reveal hover-zoom">
+          <img src="https://images.unsplash.com/photo-1520975669928-41bce9c9f7af?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="أحدث الموديلات" />
+          <h3 data-i18n="cat.new">أحدث الموديلات</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="featured" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="featured.title">المنتجات المميزة</h2>
+      <p class="section-sub reveal" data-i18n="featured.subtitle">مختاراتنا بعناية لتناسب ذوقك</p>
+
+      <div class="grid cols-1 cols-sm-2 cols-md-3 gap-lg">
+        <!-- Product Card 1 -->
+        <div class="product-card glass reveal hover-shadow">
+          <div class="product-media zoom-img">
+            <img src="https://images.unsplash.com/photo-1526178619357-0b3f2f9c9f8b?q=80&w=900&auto=format&fit=crop&crop=entropy" alt="جاكيت جلد" />
+          </div>
+          <div class="product-body">
+            <h3 data-i18n="p1.name">جاكيت جلد كلاسيكي</h3>
+            <p data-i18n="p1.desc">خامة فاخرة وتصميم عصري.</p>
+            <div class="product-footer">
+              <span class="price">EGP 1,450</span>
+              <button class="btn btn-primary small" data-i18n="buy">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card glass reveal hover-shadow">
+          <div class="product-media zoom-img">
+            <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=900&auto=format&fit=crop&crop=entropy" alt="فستان" />
+          </div>
+          <div class="product-body">
+            <h3 data-i18n="p2.name">فستان سهرة أنيق</h3>
+            <p data-i18n="p2.desc">تفاصيل دقيقة وقصّة مميزة.</p>
+            <div class="product-footer">
+              <span class="price">EGP 980</span>
+              <button class="btn btn-primary small" data-i18n="buy">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card glass reveal hover-shadow">
+          <div class="product-media zoom-img">
+            <img src="https://images.unsplash.com/photo-1542293787938-c9e299b880f9?q=80&w=900&auto=format&fit=crop&crop=entropy" alt="حذاء" />
+          </div>
+          <div class="product-body">
+            <h3 data-i18n="p3.name">حذاء جلد فخم</h3>
+            <p data-i18n="p3.desc">راحة وجودة عالية.</p>
+            <div class="product-footer">
+              <span class="price">EGP 760</span>
+              <button class="btn btn-primary small" data-i18n="buy">اطلب الآن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="why.title">لماذا حمادة ستورز؟</h2>
+      <div class="grid cols-1 cols-sm-3 gap-lg">
+        <div class="feature-card glass reveal">
+          <h3 data-i18n="why.quality">خامات عالية الجودة</h3>
+          <p data-i18n="why.quality_desc">نتعاون مع أفضل الموردين لضمان أعلى معايير الخامة.</p>
+        </div>
+        <div class="feature-card glass reveal">
+          <h3 data-i18n="why.trends">أحدث صيحات الموضة</h3>
+          <p data-i18n="why.trends_desc">تشكيلاتنا متجددة كل موسم لتكون دائماً في الطليعة.</p>
+        </div>
+        <div class="feature-card glass reveal">
+          <h3 data-i18n="why.price">أسعار تنافسية</h3>
+          <p data-i18n="why.price_desc">أفضل قيمة مقابل سعر دون المساس بالجودة.</p>
+        </div>
+
+        <div class="feature-card glass reveal">
+          <h3 data-i18n="why.support">خدمة عملاء ممتازة</h3>
+          <p data-i18n="why.support_desc">فريقنا جاهز للرد ومساعدتك في كل خطوة.</p>
+        </div>
+        <div class="feature-card glass reveal">
+          <h3 data-i18n="why.fast">سرعة تجهيز الطلبات</h3>
+          <p data-i18n="why.fast_desc">خدمة شحن سريعة وموثوقة داخل وخارج القاهرة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="testimonials.title">آراء العملاء</h2>
+
+      <div class="testimonials grid cols-1 cols-sm-2">
+        <div class="testimonial-card glass reveal">
+          <div class="t-top">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&crop=faces" alt="عميل1" />
+            <div>
+              <h4>أحمد محمود</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p data-i18n="test1">خدمة رائعة وجودة الملابس ممتازة. أنصح الجميع بالتسوق من هنا.</p>
+        </div>
+
+        <div class="testimonial-card glass reveal">
+          <div class="t-top">
+            <img src="https://images.unsplash.com/photo-1545996124-2b4b4b7694a7?q=80&w=200&auto=format&fit=crop&crop=faces" alt="عميل2" />
+            <div>
+              <h4>منى خالد</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p data-i18n="test2">وصل الطلب سريعًا والجودة فاقت التوقعات. تجربة ممتازة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats">
+    <div class="container grid cols-2 cols-sm-4 gap-md">
+      <div class="stat-card glass reveal">
+        <h3 class="stat" data-target="12000">0</h3>
+        <p data-i18n="stat.customers">عدد العملاء</p>
+      </div>
+      <div class="stat-card glass reveal">
+        <h3 class="stat" data-target="850">0</h3>
+        <p data-i18n="stat.products">عدد المنتجات</p>
+      </div>
+      <div class="stat-card glass reveal">
+        <h3 class="stat" data-target="15400">0</h3>
+        <p data-i18n="stat.orders">عدد الطلبات</p>
+      </div>
+      <div class="stat-card glass reveal">
+        <h3 class="stat" data-target="7">0</h3>
+        <p data-i18n="stat.years">سنوات الخبرة</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="contact.title">تواصل معنا</h2>
+      <div class="contact-grid">
+        <div class="contact-card glass reveal">
+          <h3 data-i18n="contact.store">اسم المتجر</h3>
+          <p class="muted">حمادة ستورز</p>
+          <h3 data-i18n="contact.phone">رقم الهاتف</h3>
+          <p class="muted">01100012345</p>
+          <h3 data-i18n="contact.address">العنوان</h3>
+          <p class="muted">شارع أحمد محمد، القاهرة</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+201100012345" data-i18n="contact.call">اتصال الآن</a>
+            <a class="btn btn-ghost" href="https://wa.me/201100012345" target="_blank" rel="noopener" data-i18n="contact.whatsapp">واتساب</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A3%D8%AD%D9%85%D8%AF+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9" target="_blank" rel="noopener" data-i18n="contact.map">الموقع على الخريطة</a>
+          </div>
+        </div>
+
+        <div class="map-card glass reveal">
+          <iframe src="https://www.google.com/maps?q=%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A3%D8%AD%D9%85%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Fixed Button -->
+  <a class="whatsapp-btn" href="https://wa.me/201100012345" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20.5 3.5C18.1 1.1 15 0 12 0 5.4 0 .2 5.4 0 12.1c0 2 0.5 3.9 1.4 5.6L0 24l6.6-1.4c1.6.8 3.3 1.2 5.2 1.2 6.6 0 11.9-5.4 11.9-12 0-3-1.1-6.2-4-8.9z" fill="#25D366"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button id="toTop" class="to-top" aria-label="go to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#">حمادة ستورز</a>
+        <p class="muted" data-i18n="footer.about">متجر متخصص في الملابس والأحذية بجودة وتصميم عالمي.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.links">روابط سريعة</h4>
+        <ul class="foot-links">
+          <li><a href="#categories" data-i18n="nav.categories">الأقسام</a></li>
+          <li><a href="#featured" data-i18n="nav.products">المنتجات</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">تواصل</h4>
+        <p class="muted">01100012345</p>
+        <div class="socials">
+          <a href="#" aria-label="facebook">FB</a>
+          <a href="#" aria-label="instagram">IG</a>
+          <a href="#" aria-label="twitter">TW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© <span id="year"></span> حمادة ستورز. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
